@@ -1,0 +1,77 @@
+:root {
+  --bg-color: rgb(51, 54, 54);
+  --primary-color: white;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+header {
+  background-color: var(--bg-color);
+  padding: 15px;
+  text-align: center;
+  color: var(--primary-color);
+}
+
+nav {
+  background-color: var(--bg-color);
+  padding-top: 5px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+
+a {
+  text-decoration: none;
+  color: var(--primary-color);
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+a:hover {
+  border-bottom: 5px solid white;
+  background-color: rgba(240, 255, 255, 0.177);
+  padding-bottom: 5px;
+}
+
+/* Art Gallery Section */
+
+img {
+  width: 23vw;
+  border-radius: 5px;
+}
+
+img:hover {
+  box-shadow: 0 0 10px purple;
+  transform: scale(1.1);
+}
+
+section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 1fr 1fr;
+  gap: 20px;
+  padding: 20px;
+}
+
+footer {
+  background-color: var(--bg-color);
+  color: var(--primary-color);
+  text-align: center;
+  padding: 20px;
+}
+
+@media screen and (max-width: 600px) {
+  img {
+    width: 100%;
+  }
+
+  section {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
